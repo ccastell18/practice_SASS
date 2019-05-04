@@ -1,7 +1,7 @@
 /* link is a pseudo class. special state */
 
 .btn{
-
+    &,
     &:link,
     &:visited{
         text-transform: uppercase;
@@ -12,15 +12,23 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
     }
 
     /* box shadow (x direction y direction blur color) */
     &:hover{
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after{
+            background-color: $color-white;
+        }
     }
 
-    &:active{
+    &:active,
+    &:focus{
+        outline: none;
         transform: translateY(-.01rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
@@ -28,10 +36,6 @@
     &--white{
         background-color: $color-white;
         color:$color-grey-dark;
-
-        &::after{
-            background-color: $color-white;
-        }
     }
 
     &--green{
