@@ -52,7 +52,7 @@
                     <span class="heading-primary--main">Outdoors</span>
                     <span class="heading-primary--sub">Is Where Life Happens</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover Our Tours</a>
             </div>
         </header>
 
@@ -130,7 +130,7 @@
                </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
                             Most popular tours
@@ -161,7 +161,7 @@
                                 <div class="card__price-box">
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
-                                    <a href="#" class="btn btn--white">Book Now</a>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                                         <div class="card__price-box">
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">$697</p>
-                                            <a href="#" class="btn btn--white">Book Now</a>
+                                            <a href="#popup" class="btn btn--white">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -221,7 +221,7 @@
                                         <div class="card__price-box">
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">$997</p>
-                                            <a href="#" class="btn btn--white">Book Now</a>
+                                            <a href="#popup" class="btn btn--white">Book Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@
             </div>
 
             <div class="u-center-text u-margin-bottom-huge">
-                <a href="#" class="btn btn--green">Discover all tours</a>
+                <a href="#popup" class="btn btn--green">Discover all tours</a>
             </div>
             </section>
 
@@ -281,7 +281,7 @@
                             </div>
                         </div>
                         <div class="u-center-text">
-                            <a href="#" class="btn-text">Read all stories &rarr;</a>
+                            <a href="#popup" class="btn-text">Read all stories &rarr;</a>
                         </div>
             </section>
 
@@ -362,5 +362,21 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-medium">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum necessitatibus architecto numquam at reprehenderit dolorem dignissimos, adipisci nulla atque, sit dicta eveniet voluptatem quos est nihil! Sed ullam corporis minus recusandae</p>
+                    <a href="#" class="btn btn--green">Book Now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
