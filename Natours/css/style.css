@@ -491,6 +491,9 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  .story__heading {
+    text-align: center;
+    margin-bottom: 3rem; }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -528,6 +531,8 @@ body {
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
+  .story__button {
+    text-align: center; }
 
 .footer {
   background-color: #333;

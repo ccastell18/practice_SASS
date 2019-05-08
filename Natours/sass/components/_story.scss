@@ -9,6 +9,11 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    &__heading{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
     // adds changes to all children of object
     & > * {
         transform: skewX(12deg);
@@ -63,6 +68,10 @@
     &:hover &__img{
         transform: translateX(-4rem)  scale(1);
         filter: blur(3px) brightness(80%);
+    }
+
+    &__button{
+        text-align: center;
     }
 
 }
